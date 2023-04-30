@@ -1,0 +1,39 @@
+// Override default variables before the import
+$body-bg: red;
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+
+.btn {
+  padding: 10px 32px !important;
+}
+
+.btn-primary {
+  background-color: #032541 !important;
+  border-color: #032541 !important;
+}
+.btn-primary:hover {
+  background-color: #093e6a !important;
+}
+.active {
+  font-weight: 700 !important;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.clamp-desc-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clamp-title-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
